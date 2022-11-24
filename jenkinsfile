@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('RUN AK') {
+            steps {
+                echo 'Hello World AK'
+            }
+        }
+        stage('BUILD AK') {
+            steps {
+                echo 'Building Hello World SAY KAD'
+            }
+        }
+        stage('DEPLOY AK') {
+            steps {
+                echo 'deploying Hello World- SAY AK'
+            }
+        }
+        stage('TEST ak') {
+            steps {
+                echo 'Testing Hello World kader'
+            }
+        }
+        stage('RELEASE AK') {
+            steps {
+                echo 'RELEASING PIPELINE PROJECT Hello World'
+            }
+        }
+    }
+}
